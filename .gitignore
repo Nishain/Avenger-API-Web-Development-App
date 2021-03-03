@@ -1,0 +1,29 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+#react front-end application
+# dependencies
+react-project/node_modules
+react-project/.pnp
+react-project/.pnp.js
+
+# testing
+react-project/coverage
+
+# production
+react-project/build
+
+# misc
+react-project/.DS_Store
+react-project/.env.local
+react-project/.env.development.local
+react-project/.env.test.local
+react-project/.env.production.local
+
+react-project/npm-debug.log*
+react-project/yarn-debug.log*
+react-project/yarn-error.log*
+
+#node application
+REST API/node_modules
+
+#individual git repos
+\individual git
