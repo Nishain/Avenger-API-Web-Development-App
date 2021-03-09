@@ -2,13 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import {BrowserRouter,Route} from 'react-router-dom'
+import NavBar from './components/NavBar'
+import Home from './components/Home'
 import Grid from './components/Grid'
-import {BrowserRouter,Route} from 'react-dom'
-import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <BrowserRouter>
+  <NavBar/>
     <Route exact path="/avengers" component={Grid} />
+    <Route exact path="/" component={Home} />
   </BrowserRouter>,
   document.getElementById('root')
 );
